@@ -1,0 +1,60 @@
+.footer {
+    background-color: var(--menu-mobile-background-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+}
+
+.footer-credits {
+    width: auto;
+    padding: 4px 10px 4px 10px;
+    color: var(--text-color);
+    font-size: .8em;
+    pointer-events: none;
+}
+
+.footer-autor {
+    margin: 5px 0 5px 0;
+}
+
+.footer-name {
+    color: var(--primary-color);
+}
+
+.footer-flag {
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+}
+
+.footer-flag img {
+    width: 20px;
+}
+
+.footer-malvinas {
+    display: flex;
+    margin: 5px 0 5px 0;
+    justify-content: center;
+    align-content: center ;
+}
+
+.footer-malvinas img {
+    width: 40px;
+}
+
+@media (min-width: 710px) {
+    .footer-credits {
+        padding: 4px 10px 4px 10px;
+        font-size: .82em;
+    }
+}
+
+@media (min-width: 950px) {
+
+    .footer-credits {
+        padding: 4px 10px 4px 10px;
+        font-size: .85em;
+    }
+
+}

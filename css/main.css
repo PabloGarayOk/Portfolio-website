@@ -1,0 +1,83 @@
+:root {
+  --theme-color: #191c32;
+  --primary-color: aquamarine;
+  --secundary-color: #F7C331;
+  --text-color-inverse: black;
+  --text-color: white;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+  --image-transparent-background-color: rgba(1, 8, 1, .3);
+  --theme-color-inverse: white;
+  --text-color-form: rgb(63, 63, 63);
+  --text-color-form-btn: rgb(187, 187, 187);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding-top: 110px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.horizontal-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 950px) {
+  .horizontal-padding {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .vertical-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
