@@ -1,0 +1,57 @@
+/* 
+  * Portfolio Website
+  * Description: Portfolio Website Developer.
+  * Version: 1.0
+  * Author: Pablo Garay - 2022
+  * https://github.com/PabloGarayOk/Portfolio-website.git
+*/
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills-content-title {
+    width: 270px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.skills-divider {
+    height: 8px;
+    width: 70px;
+    background-color: var(--primary-color);
+    margin: 8px 0 1.5em 0;
+    border-radius: 20px;
+}
+
+.skills span {
+    color: var(--primary-color);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    font-size: 1.2em;
+    font-weight: 500;
+    box-shadow: 3px 3px 6px rgb(255 255 255 / 60%);
+    border-radius: 42px;
+    padding: .5em .7em;  
+    margin: .5em; 
+}
+
+@media (min-width: 950px) {
+    .skills {
+        margin: 1.7em auto 1.7em auto;
+        max-width: 980px;
+    }
+    
+    .skills-list li {
+        margin: .7em;
+    }
+}
