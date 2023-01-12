@@ -84,3 +84,25 @@ function validar() {
   }
   
 }
+
+// Cambio de Idioma
+
+var buttonText = document.getElementById('button-text');
+buttonText.addEventListener("click", clicked);
+var botonText2 = document.getElementById('boton-text');
+botonText2.addEventListener("click", clicked2);
+
+
+const carta = document.querySelector(".carta");
+const btn = document.querySelector(".btn");
+
+
+function clicked(){
+    carta.classList.toggle("back");
+    btn.classList.toggle("back"); 
+}
+
+function clicked2(){
+    carta.classList.toggle("back");
+    btn.classList.toggle("back"); 
+}
