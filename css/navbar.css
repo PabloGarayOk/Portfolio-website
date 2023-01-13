@@ -134,3 +134,51 @@
     text-shadow: 1px 1px 1px rgb(55, 55, 55);
   }
 }
+
+/* Boton Idioma */
+
+.cont-button-idioma {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  -webkit-perspective:650;
+}
+
+.button-flags {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.side-flag {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+  position: absolute;
+}
+
+.side-flag:hover {
+  border-radius: 50%;    
+  cursor: pointer;
+}
+
+.front-flag img, .back-flag img{
+  width: 30px;
+}
+
+.back-flag{
+  transform: rotateY(180deg);
+}
+
+.front-flag:hover{
+  box-shadow: 0 0 10px 5px rgb(66, 196, 235);
+}
+
+.back-flag:hover{
+  box-shadow: 0 0 10px 5px rgb(23, 19, 242);
+}
