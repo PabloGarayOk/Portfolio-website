@@ -13,6 +13,29 @@
 
 .home-info {
     margin: 25px 0 20px 0;
+    height: 100px;
+    width: 340px;
+}
+
+/* Saludo */
+.home-info-greeting{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.side-greeting{
+    height: 100%;
+    width: 100%;
+    -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+    position: absolute;   
+}
+
+.back-greeting{
+    transform: rotateY(180deg);
 }
 
 .home-info span{

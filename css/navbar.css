@@ -137,7 +137,11 @@
 
 /* Boton Idioma */
 
-.cont-button-idioma {
+.back{
+  transform: rotateY(180deg);
+}
+
+.cont-button-languague {
   height: 30px;
   width: 30px;
   margin: auto;
@@ -176,9 +180,9 @@
 }
 
 .front-flag:hover{
-  box-shadow: 0 0 10px 5px rgb(66, 196, 235);
+  box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
 }
 
 .back-flag:hover{
-  box-shadow: 0 0 10px 5px rgb(23, 19, 242);
+  box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
 }

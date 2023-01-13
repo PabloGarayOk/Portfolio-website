@@ -87,22 +87,14 @@ function validar() {
 
 // Cambio de Idioma
 
-var buttonText = document.getElementById('button-text');
-buttonText.addEventListener("click", clicked);
-var botonText2 = document.getElementById('boton-text');
-botonText2.addEventListener("click", clicked2);
+var flagA = document.getElementById('flagA');
+flagA.addEventListener("click", toggleLanguage);
+var flagB = document.getElementById('flagB');
+flagB.addEventListener("click", toggleLanguage);
 
+const buttonFlags = document.querySelector(".button-flags");
 
-const carta = document.querySelector(".carta");
-const btn = document.querySelector(".btn");
-
-
-function clicked(){
-    carta.classList.toggle("back");
-    btn.classList.toggle("back"); 
-}
-
-function clicked2(){
-    carta.classList.toggle("back");
-    btn.classList.toggle("back"); 
+function toggleLanguage(){
+  buttonFlags.classList.toggle("back");
+  
 }
