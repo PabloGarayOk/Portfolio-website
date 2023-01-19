@@ -92,9 +92,43 @@ flagA.addEventListener("click", toggleLanguage);
 var flagB = document.getElementById('flagB');
 flagB.addEventListener("click", toggleLanguage);
 
+var flagC = document.getElementById('flagC');
+flagC.addEventListener("click", toggleLanguage);
+var flagD = document.getElementById('flagD');
+flagD.addEventListener("click", toggleLanguage);
+
 const buttonFlags = document.querySelector(".button-flags");
+const img = document.querySelector(".home-img-box");
+const greeting = document.querySelector(".home-info-greeting-box");
+const iamName = document.querySelector(".home-info-name-box");
+const subtitle = document.querySelector(".home-info-subtitle-box");
+const download = document.querySelector(".home-info-download-box");
+const about = document.querySelector(".about-title-box");
+const aboutWho = document.querySelector(".about-content-info-who-box");
+const aboutWhoText = document.querySelector(".about-content-info-who-text-box");
+const aboutHobbies = document.querySelector(".about-content-details-hobbies-box");
+const aboutHobbiesText = document.querySelector(".about-content-details-hobbies-text-box");
+
+const skills = document.querySelector(".skills-content-title-box");
+const portfolio = document.querySelector(".portfolio-content-title-box");
+const contact = document.querySelector(".contact-content-title-box");
+
+
 
 function toggleLanguage(){
   buttonFlags.classList.toggle("back");
-  
+  img.classList.toggle("back");
+  greeting.classList.toggle("back");
+  iamName.classList.toggle("back");
+  subtitle.classList.toggle("back");
+  download.classList.toggle("back");
+  about.classList.toggle("back");
+  aboutWho.classList.toggle("back");
+  aboutWhoText.classList.toggle("backwho");
+  aboutHobbies.classList.toggle("back");
+  aboutHobbiesText.classList.toggle("back-hobbies");
+
+  skills.classList.toggle("back-skills");
+  portfolio.classList.toggle("back");
+  contact.classList.toggle("back");
 }

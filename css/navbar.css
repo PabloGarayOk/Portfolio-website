@@ -140,6 +140,9 @@
 .back{
   transform: rotateY(180deg);
 }
+.back360{
+  transform: rotateY(360deg);
+}
 
 .cont-button-languague {
   height: 30px;

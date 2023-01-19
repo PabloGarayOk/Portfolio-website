@@ -6,11 +6,41 @@
     color: var(--theme-color);
 }
 
-.about-title {
+/* About original*/
+/* .about-title {
     width: 200px;
     margin: 0 auto;
     align-items: center;    
+} */
+
+/* Animacion About title*/
+
+.about-title {
+    width: 182px;
+    margin: 0 auto;
+    align-items: center;
+   -webkit-perspective:650;
 }
+
+.about-title-box {
+    height: 77px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.about-title-box-side {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.about-title-box-side-back {
+    margin: 0 7px;
+    transform: rotateY(180deg);
+}
+
+/*Fin animacion About title*/
 
 .about-divider {
     height: 8px;
@@ -19,7 +49,7 @@
     margin: 8px 0 1.5em 0;
     border-radius: 20px;
 }
-
+/* Fin Animacion Divider */
 .about-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -29,14 +59,74 @@
     justify-content: space-evenly;
 }
 
+/* .about-content-info {
+    width: 100%;
+    max-width: 450px;
+    grid-column: 1/1;
+    text-align: center; 
+    margin: 0 auto;
+} */
+
+/* Animacion About Who */
+
+.backwho{
+    margin-bottom: 25px;
+    transform: rotateY(180deg);
+}
+
 .about-content-info {
     width: 100%;
     max-width: 450px;
     grid-column: 1/1;
     text-align: center; 
     margin: 0 auto;
+    -webkit-perspective:3950;
 }
 
+.about-content-info-who-box {
+    height: 30px;
+    width: 153px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.7s;
+} 
+
+.about-content-info-who-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.about-content-info-who-box-side-front {
+    margin-left: 9px;
+}
+
+.about-content-info-who-box-side-back {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion About Who */
+/* Animacion About Who Text */
+.about-content-info-who-text-box {
+    height: 290px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.7s;
+} 
+
+.about-content-info-who-text-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.about-content-info-who-text-box-side-back {
+    transform: rotateY(180deg);
+}
+/* Fin Animacion About Who Text */
+
+/* Animacion Hobbies */
 .about-content-details {
     width: 100%;
     max-width: 450px;
@@ -45,6 +135,55 @@
     margin: 0 auto;
 }
 
+.about-content-details-hobbies-box {
+    height: 30px;
+    width: 213px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.7s;
+} 
+
+.about-content-details-hobbies-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.about-content-details-hobbies-box-side-front {
+    margin-left: 33px;
+}
+
+.about-content-details-hobbies-box-side-back {
+    transform: rotateY(180deg);
+}
+/* Fin Animacion Hobbies */
+
+/* Animacion About Hobbies Text */
+
+.back-hobbies{
+    transform: rotateY(180deg);
+}
+
+.about-content-details-hobbies-text-box {
+    height: 135px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.7s;
+} 
+
+.about-content-details-hobbies-text-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.about-content-details-hobbies-text-box-side-back {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion About Who Text */
+
 .about-content p{
     font-size: 1.2em;
 }
@@ -52,6 +191,8 @@
 @media (min-width: 950px) {
     .about-content {
         grid-template-columns: repeat(12, 1fr);
+        max-width: 1150px;
+        margin: auto;
     }
 
     .about-content-info {
@@ -60,10 +201,135 @@
         text-align: right; 
     }
 
+    .backwho{
+        margin-bottom: 40px;
+    }
+
+    .about-content-info-who-box {
+        width: 100%;
+    }
+    
+    .about-content-info-who-box-side-front{
+        margin-left: 234px;
+    }
+
     .about-content-details {
         width: 100%;
+        /*height: 210px;*/
         grid-column: 8/11;
         text-align: left;
     }
 
+    .about-content-details-hobbies-box {
+        margin: 0 0;
+    }
+
+    .about-content-details-hobbies-box-side-front {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 1079px) {
+    
+    .backwho{
+        margin-bottom: 20px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 270px;
+    } 
+
+    .about-content-info-who-box-side-front{
+        margin-left: 307px;
+    }
+}
+
+@media (max-width: 420px){
+    
+    .backwho{
+        margin-bottom: 40px;
+    }
+    .back-hobbies{
+        margin-bottom: 0px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 318px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .backwho{
+        margin-bottom: 40px;
+    }
+    .back-hobbies{
+        margin-bottom: 0px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 335px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 150px;
+    }
+}
+
+@media (max-width: 393px){
+    
+    .backwho{
+        margin-bottom: 60px;
+    }
+    .back-hobbies{
+        margin-bottom: 0px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 340px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 150px;
+    }
+}
+
+@media (max-width: 375px){
+    .backwho{
+        margin-bottom: 60px;
+    }
+    
+    .back-hobbies{
+        margin-bottom: 20px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 370px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 160px;
+    }
+}
+
+@media (max-width: 350px){
+    .backwho{
+        margin-bottom: 60px;
+    }
+
+    .back-hobbies{
+        margin-bottom: 20px;
+    }
+
+    .about-content-info-who-text-box {
+        height: 400px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 160px;
+    }
 }

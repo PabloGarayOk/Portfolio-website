@@ -2,12 +2,41 @@
     text-align: center;
 }
 
+/* .skills-content-title {
+    width: 270px;
+    margin: 0 auto;
+    align-items: center;
+} */
+
+/* Animacion Skills */
+.back-skills{
+    margin-bottom: 55px;
+    transform: rotateY(180deg);
+}
 .skills-content-title {
     width: 270px;
     margin: 0 auto;
     align-items: center;
+    -webkit-perspective:650;
+}
+.skills-content-title-box {
+    height: 60px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.skills-content-title-box-side {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
 }
 
+.skills-content-title-box-side-back {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Skills */
 .skills-divider {
     height: 8px;
     width: 70px;
@@ -66,5 +95,18 @@
     
     .skills-list li {
         margin: .7em;
+    }
+
+    .back-skills{
+        margin-bottom: 0px;
+        transform: rotateY(180deg);
+    }
+
+    .skills-content-title {
+        width: 545px;
+    }
+
+    .skills-content-title-box-side-front {
+        margin-left: 138px;
     }
 }

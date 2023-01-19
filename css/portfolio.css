@@ -12,11 +12,38 @@
     color: var(--text-color);
 }
 
+/* .portfolio-content-title {
+    width: 200px;
+    margin: 0 auto;
+    align-items: center;
+} */
+
+/* Animacion Portfolio */
+
 .portfolio-content-title {
     width: 200px;
     margin: 0 auto;
     align-items: center;
 }
+.portfolio-content-title-box {
+    height: 80px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-content-title-box-side {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-content-title-box-side-back {
+    margin-left: -10px;
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio */
 
 .portfolio-divider {
     height: 8px;

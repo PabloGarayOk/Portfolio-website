@@ -2,10 +2,36 @@
     text-align: center;
 }
 
-.contact-content-title {
+/* .contact-content-title {
     width: 164px;
     margin: 0 auto;
     align-items: center;
+} */
+
+/* Animacion Contact */
+
+.contact-content-title {
+    width: 161px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact-content-title-box{
+    height: 53px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.contact-content-title-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.contact-content-title-box-side-back {
+    margin-left: -13px;
+    transform: rotateY(180deg);
 }
 
 .contact-divider {
