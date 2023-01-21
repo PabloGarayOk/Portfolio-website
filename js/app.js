@@ -108,9 +108,14 @@ const aboutWho = document.querySelector(".about-content-info-who-box");
 const aboutWhoText = document.querySelector(".about-content-info-who-text-box");
 const aboutHobbies = document.querySelector(".about-content-details-hobbies-box");
 const aboutHobbiesText = document.querySelector(".about-content-details-hobbies-text-box");
-
 const skills = document.querySelector(".skills-content-title-box");
 const portfolio = document.querySelector(".portfolio-content-title-box");
+const portfolioCards1 = document.querySelector(".portfolio-container-cards-box1");
+const portfolioCards2 = document.querySelector(".portfolio-container-cards-box2");
+const portfolioCards3 = document.querySelector(".portfolio-container-cards-box3");
+const portfolioCards4 = document.querySelector(".portfolio-container-cards-box4");
+const portfolioCards5 = document.querySelector(".portfolio-container-cards-box5");
+const portfolioCards6 = document.querySelector(".portfolio-container-cards-box6");
 const contact = document.querySelector(".contact-content-title-box");
 
 
@@ -127,8 +132,13 @@ function toggleLanguage(){
   aboutWhoText.classList.toggle("backwho");
   aboutHobbies.classList.toggle("back");
   aboutHobbiesText.classList.toggle("back-hobbies");
-
   skills.classList.toggle("back-skills");
   portfolio.classList.toggle("back");
+  portfolioCards1.classList.toggle("back");
+  portfolioCards2.classList.toggle("back");
+  portfolioCards3.classList.toggle("back");
+  portfolioCards4.classList.toggle("back");
+  portfolioCards5.classList.toggle("back");
+  portfolioCards6.classList.toggle("back");
   contact.classList.toggle("back");
 }

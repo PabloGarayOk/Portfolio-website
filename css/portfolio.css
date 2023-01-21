@@ -58,7 +58,7 @@
     margin: 0 auto;
 }
 
-.porfolio-container-cards {
+.portfolio-container-cards {
     display: grid;
     grid-template-columns: repeat(1, minmax(280px, .45fr));
     padding-top: 1em;
@@ -67,6 +67,126 @@
     justify-content: space-evenly;
 }
 
+/* Animacion Portfolio Cards 1*/
+
+.portfolio-container-cards-box1 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side1 {   
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back1{
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 1*/
+/* Animacion Portfolio Cards 2 */
+
+.portfolio-container-cards-box2 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side2 {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back2 {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 2*/
+/* Animacion Portfolio Cards 3 */
+
+.portfolio-container-cards-box3 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side3 {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back3 {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 3*/
+/* Animacion Portfolio Cards 4 */
+
+.portfolio-container-cards-box4 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side4 {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back4 {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 4*/
+/* Animacion Portfolio Cards 5 */
+
+.portfolio-container-cards-box5 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side5 {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back5 {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 5*/
+/* Animacion Portfolio Cards 6 */
+
+.portfolio-container-cards-box6 {
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+} 
+
+.portfolio-container-cards-box-side6 {    
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.portfolio-container-cards-box-side-back6 {
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Portfolio Cards 6*/
 .portfolio-card {
     text-align: center;
     align-items: center;
@@ -141,13 +261,13 @@
 }
 
 @media (min-width: 710px) {
-    .porfolio-container-cards {
+    .portfolio-container-cards {
         grid-template-columns: repeat(2, minmax(250px, 280px));
     }
 }
 
 @media (min-width: 950px) {
-    .porfolio-container-cards {
+    .portfolio-container-cards {
         grid-template-columns: repeat(3, minmax(280px, 320px));
 
     }
