@@ -487,31 +487,64 @@
 						</div>
 					</div>
 				</div>
-				<form name="contact_form" id="contact_form" action="php/contact-form.php" method="post" onsubmit="return validar();">
-					<div class="contact-group">
-						<?php
-                            include("php/feedback.php");
-                        ?>
-						<div class="contact-row">
-							<input type="text" name="name" id="name" placeholder="" value="<?= $_GET['nombre'] ? $_GET['nombre'] : "" ?>" required="">
-							<span class="contact-line"></span>
-							<label>Name</label>
-						</div>
-						<div class="contact-row">
-							<input type="email" name="email" id="email" placeholder="" value="<?= $_GET['email'] ? $_GET['email'] : "" ?>" required="">
-							<span class="contact-line"></span>
-							<label>E-mail</label>             
-						</div>
-						<div class="contact-row">    
-							<textarea name="message" id="message" rows="3" placeholder="" required=""><?= $_GET['mensaje'] ? $_GET['mensaje'] : "" ?></textarea>
-							<span class="contact-line"></span>
-							<label class="contact-message">Message</label>
-						</div>
-						<button class="contact-btn-send" type="submit" name="submit-form" onclick="validar();">
-							<span>Send Message</span>
-						</button>
+				
+				<div class="contact-content-form-box">
+					<div class="contact-content-form-box-side">
+						<form name="contact_form" id="contact_form" action="php/contact-form.php" method="post" onsubmit="return validar();">					
+							<div class="contact-group">
+								<?php
+									include("php/feedback.php");
+								?>
+								<div class="contact-row">
+									<input type="text" name="name" id="name" placeholder="" value="<?= $_GET['nombre'] ? $_GET['nombre'] : "" ?>" required="">
+									<span class="contact-line"></span>
+									<label>Name</label>
+								</div>
+								<div class="contact-row">
+									<input type="email" name="email" id="email" placeholder="" value="<?= $_GET['email'] ? $_GET['email'] : "" ?>" required="">
+									<span class="contact-line"></span>
+									<label>E-mail</label>             
+								</div>
+								<div class="contact-row">    
+									<textarea name="message" id="message" rows="3" placeholder="" required=""><?= $_GET['mensaje'] ? $_GET['mensaje'] : "" ?></textarea>
+									<span class="contact-line"></span>
+									<label class="contact-message">Message</label>
+								</div>
+								<button class="contact-btn-send" type="submit" name="submit-form" onclick="validar();">
+									<span>Send Message</span>
+								</button>
+							</div>
+						</form>	
 					</div>
-				</form>
+					<div class="contact-content-form-box-side contact-content-form-box-side-back">
+						<form name="contact_form" id="contact_form_back" action="php/formulario-de-contacto.php" method="post" onsubmit="return validarBack();">
+							<div class="contact-group">
+								<?php
+									include("php/respuestas.php");
+								?>
+								<div class="contact-row">
+									<input type="text" name="name" id="nombre" placeholder="" value="<?= $_GET['nombre'] ? $_GET['nombre'] : "" ?>" required="">
+									<span class="contact-line"></span>
+									<label>Nombre</label>
+								</div>
+								<div class="contact-row">
+									<input type="email" name="email" id="correo" placeholder="" value="<?= $_GET['email'] ? $_GET['email'] : "" ?>" required="">
+									<span class="contact-line"></span>
+									<label>Correo electr&oacute;nico</label>             
+								</div>
+								<div class="contact-row">    
+									<textarea name="message" id="mensaje" rows="3" placeholder="" required=""><?= $_GET['mensaje'] ? $_GET['mensaje'] : "" ?></textarea>
+									<span class="contact-line"></span>
+									<label class="contact-message">Mensaje</label>
+								</div>
+								<button class="contact-btn-send" type="submit" name="submit-form" onclick="validarBack();">
+									<span>Enviar Mensaje</span>
+								</button>
+							</div>
+						</form>
+					</div>	
+				</div>				
+
 				<div class="contact-links">							
 					<a href="mailto:hello@pablogaray.com.ar">
 						<i class="fa-solid fa-envelope"></i>

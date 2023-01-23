@@ -85,6 +85,53 @@ function validar() {
   
 }
 
+// Validar formulario Back
+
+function validarBack() {
+    
+  const usuarioBack = document.getElementById("nombre");
+  const emailBack = document.getElementById('corero');
+  const messageBack = document.getElementById("mensaje");
+  const formBack = document.getElementById("contact_form_back");
+
+  const usuario2Back = usuario.value.trim();
+  const email2Back = email.value.trim();
+  const message2Back = message.value.trim();
+  
+  let regexEmailBack = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+  if (usuario2Back === '') {
+      alert("El campo Nombre esta vacio.")
+      usuarioBack.focus(); 
+      return false;
+
+  }else if(usuario2Back.length > 30) {
+      alert("El Nombre es muy largo.")
+      usuarioBack.focus(); 
+      return false;
+  
+  }else if (email2Back === '') {
+      alert("El campo correo electronico esta vacio.");                          
+      emailBack.focus();
+      return false;
+  
+  }else if (!regexEmailBack.test(email2Back)) {
+      alert("El Correo electronico no tiene un formato correcto.");
+      emailBack.focus();              
+      return false;
+  
+  }else if (message2Back === '') {
+      alert("El campo Mensaje esta vacio.");
+      messageBack.value="";
+      messageBack.focus();
+      return false;
+  
+  }else{
+      formBack.submit();
+  }
+  
+}
+
 // Cambio de Idioma
 
 var flagA = document.getElementById('flagA');
@@ -117,6 +164,7 @@ const portfolioCards4 = document.querySelector(".portfolio-container-cards-box4"
 const portfolioCards5 = document.querySelector(".portfolio-container-cards-box5");
 const portfolioCards6 = document.querySelector(".portfolio-container-cards-box6");
 const contact = document.querySelector(".contact-content-title-box");
+const contactForm = document.querySelector(".contact-content-form-box");
 
 
 
@@ -141,4 +189,5 @@ function toggleLanguage(){
   portfolioCards5.classList.toggle("back");
   portfolioCards6.classList.toggle("back");
   contact.classList.toggle("back");
+  contactForm.classList.toggle("back");
 }
