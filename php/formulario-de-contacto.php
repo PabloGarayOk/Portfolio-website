@@ -5,16 +5,16 @@
    //Capturamos los datos enviados por POST desde la pagina cotizaciones
 
    $to               = 'hola@pablogaray.com.ar';
-   $name             = $_POST["name"];
-   $email            = $_POST["email"];
+   $nombre             = $_POST["nombre"];
+   $correo            = $_POST["correo"];
    $subject          = 'Consulta de la web Portfolio';
-   $message          = $_POST["message"];
+   $mensaje          = $_POST["mensaje"];
 
-   //Comprobamos el email
+   //Comprobamos el correo
 
-   if(!preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $email)){
+   if(!preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $correo)){
     
-      header("location:../index.php?respuestas=C&nombre=$name&email=$email&mensaje=$message#contact");
+      header("location:../index.php?respuestas=C&side=''&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
       exit;
 
    }else{
@@ -23,14 +23,14 @@
 
       $headers        = "MIME-Version: 1.0\r\n"; 
       $headers       .= "Content-Type: text/plain; charset=ISO-8859-1\r\n";
-      $headers       .= "Reply-To: " . $email . "\r\n";
-      $headers       .= "From: " . $name . " - nos quiere hacer una consulta.\r\n";
+      $headers       .= "Reply-To: " . $correo . "\r\n";
+      $headers       .= "From: " . $nombre . " - nos quiere hacer una consulta.\r\n";
       
       //Armamos el mensaje
 
-      $fullMessage    = "Nombre: " . $name . "\r\n";
-      $fullMessage   .= "Email: " . $email . "\r\n";
-      $fullMessage   .= "Mensaje: " . $message . "\r\n";
+      $fullMessage    = "Nombre: " . $nombre . "\r\n";
+      $fullMessage   .= "Email: " . $correo . "\r\n";
+      $fullMessage   .= "Mensaje: " . $mensaje . "\r\n";
 
       //Enviamos el mail
 
@@ -40,12 +40,12 @@
 
       if($sentMail){
        
-         header("location:../index.php?respuestas=A#contact");
+         header("location:../index.php?respuestas=A&side=''#contact");
          exit;      
        
       }else{
        
-         header("location:../index.php?respuestas=B&nombre=$name&email=$email&mensaje=$message#contact");
+         header("location:../index.php?respuestas=B&side=''&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
          exit;
       }
    }

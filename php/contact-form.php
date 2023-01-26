@@ -14,7 +14,7 @@
 
    if(!preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $email)){
     
-      header("location:../index.php?feedback=C&nombre=$name&email=$email&mensaje=$message#contact");
+      header("location:../index.php?feedback=C&name=$name&email=$email&message=$message#contact");
       exit;
 
    }else{
@@ -45,7 +45,7 @@
        
       }else{
        
-         header("location:../index.php?feedback=B&nombre=$name&email=$email&mensaje=$message#contact");
+         header("location:../index.php?feedback=B&name=$name&email=$email&message=$message#contact");
          exit;
       }
    }

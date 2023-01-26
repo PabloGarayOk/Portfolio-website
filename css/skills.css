@@ -36,6 +36,10 @@
     transform: rotateY(180deg);
 }
 
+.skills-content-title-box-side-front {
+    transform: rotateX(0deg);
+}
+
 /* Fin Animacion Skills */
 .skills-divider {
     height: 8px;

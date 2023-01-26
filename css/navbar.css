@@ -140,18 +140,28 @@
 .back{
   transform: rotateY(180deg);
 }
+
+.front {
+  transition-delay: 7s;    
+  transform: rotatex(90deg);
+}
+
 .back360{
   transform: rotateY(360deg);
 }
 
-.cont-button-languague {
+/* Animacion Boton Language */
+
+.menu-language,
+.menu-mobile-language {
   height: 30px;
   width: 30px;
   margin: auto;
   -webkit-perspective:650;
 }
 
-.button-flags {
+.menu-language-box,
+.menu-mobile-language-box {
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -160,32 +170,47 @@
   transition: 1.5s;
 }
 
-.side-flag {
+.menu-language-box-side,
+.menu-mobile-language-box-side {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   -moz-backface-visibility: hidden;
-        backface-visibility: hidden;
+       backface-visibility: hidden;
   position: absolute;
 }
 
-.side-flag:hover {
+.menu-language-box-side-front,
+.menu-mobile-language-box-side-front {
+  transform: rotateX(0deg);
+}
+
+.menu-language-box-side-back,
+.menu-mobile-language-box-side-back {
+  transform: rotateY(180deg);
+}
+
+/* Fin Animacion Boton Language */
+
+.menu-language-box-side:hover,
+.menu-mobile-language-box-side:hover {
   border-radius: 50%;    
   cursor: pointer;
 }
 
-.front-flag img, .back-flag img{
+.menu-language-box-side-front img,
+.menu-language-box-side-back img,
+.menu-mobile-language-box-side-front img,
+.menu-mobile-language-box-side-back img {
   width: 30px;
 }
 
-.back-flag{
-  transform: rotateY(180deg);
-}
-
-.front-flag:hover{
+.menu-language-box-side-front:hover,
+.menu-mobile-language-box-side-front:hover {
   box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
 }
 
-.back-flag:hover{
+.menu-language-box-side-back:hover,
+.menu-mobile-language-box-side-back:hover {
   box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
 }

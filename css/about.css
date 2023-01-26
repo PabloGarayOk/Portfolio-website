@@ -40,6 +40,10 @@
     transform: rotateY(180deg);
 }
 
+.about-title-box-side-front {
+    transform: rotateX(0deg);
+}
+
 /*Fin animacion About title*/
 
 .about-divider {
@@ -100,6 +104,7 @@
 
 .about-content-info-who-box-side-front {
     margin-left: 9px;
+    transform: rotateX(0deg);
 }
 
 .about-content-info-who-box-side-back {
@@ -121,9 +126,14 @@
          backface-visibility: hidden;
 }
 
+.about-content-info-who-text-box-side-front {
+    transform: rotateX(0deg);
+}
+
 .about-content-info-who-text-box-side-back {
     transform: rotateY(180deg);
 }
+
 /* Fin Animacion About Who Text */
 
 /* Animacion Hobbies */
@@ -152,6 +162,7 @@
 
 .about-content-details-hobbies-box-side-front {
     margin-left: 33px;
+    transform: rotateX(0deg);
 }
 
 .about-content-details-hobbies-box-side-back {
@@ -176,6 +187,10 @@
     position: absolute;
     -moz-backface-visibility: hidden;
          backface-visibility: hidden;
+}
+
+.about-content-details-hobbies-text-box-side-front {
+    transform: rotateX(0deg);
 }
 
 .about-content-details-hobbies-text-box-side-back {

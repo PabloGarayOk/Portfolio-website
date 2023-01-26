@@ -31,6 +31,10 @@
     position: absolute;
 }
 
+.home-img-box-side-front {
+    transform: rotateX(0deg);
+}
+
 .home-img-box-side-back {
     transform: rotateY(180deg);
 }
@@ -74,6 +78,10 @@
     position: absolute;
 }
 
+.home-info-greeting-box-side-front {
+    transform: rotateX(0deg);
+}
+
 .home-info-greeting-box-side-back {
     transform: rotateY(180deg);
 }
@@ -97,6 +105,11 @@
             backface-visibility: hidden;
     position: absolute;
 }
+
+.home-info-name-box-side-front{
+    transform: rotateX(0deg);
+}
+
 .home-info-name-box-side-back{
     transform: rotateY(180deg);
 }
@@ -122,6 +135,10 @@
        -moz-backface-visibility: hidden;
             backface-visibility: hidden;
     position: absolute;
+}
+
+.home-info-subtitle-box-side-front {
+    transform: rotateX(0deg);
 }
 
 .home-info-subtitle-box-side-back {
@@ -165,6 +182,10 @@
        -moz-backface-visibility: hidden;
             backface-visibility: hidden;
     position: absolute;
+}
+
+.home-info-download-box-side-front {
+    transform: rotateX(0deg);
 }
 
 .home-info-download-box-side-back {
