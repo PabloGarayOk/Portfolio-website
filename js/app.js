@@ -10,17 +10,24 @@ openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
 const menuLinks = document.querySelectorAll(".menu a[href^='#']");
+// const menuLinksBacks = document.querySelectorAll(".menu a[href^='#']")[1];
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       const id = entry.target.getAttribute("id");
-      const menuLink = document.querySelector(`.menu a[href="#${id}"]`)
+      const menuLink = document.querySelector(`.menu a[href="#${id}"]`);
+      // const menuLinkBack = document.querySelectorAll(`.menu a[href="#${id}"]`)[1];
+      const menuActive = document.querySelector(".menu a.active");
+      // const menuActiveBack = document.querySelectorAll(".menu a.active")[1];
 
       if (entry.isIntersecting) {
-        document.querySelector(".menu a.active").classList.remove("active");
+        menuActive.classList.remove("active");
+        // menuActiveBAck.classList.remove("active");
         menuLink.classList.add("active");
+       //  menuLinkBack.classList.add("active");
       }
+
     });
   }, 
   { rootMargin: "-30% 0px -70% 0px" }
@@ -136,15 +143,23 @@ function validarBack() {
 
 var flagA = document.getElementById('flagA');
 flagA.addEventListener("click", toggleLanguage);
+flagA.addEventListener("click", sizeLi);
 var flagB = document.getElementById('flagB');
 flagB.addEventListener("click", toggleLanguage);
-
+flagB.addEventListener("click", sizeLi);
 var flagC = document.getElementById('flagC');
 flagC.addEventListener("click", toggleLanguage);
+flagC.addEventListener("click", sizeLi);
 var flagD = document.getElementById('flagD');
 flagD.addEventListener("click", toggleLanguage);
+flagD.addEventListener("click", sizeLi);
 
 // Navbar
+const menuHome = document.querySelector(".menu-home-box");
+const menuAbout = document.querySelector(".menu-about-box");
+const menuSkills = document.querySelector(".menu-skills-box");
+const menuPortfolio = document.querySelector(".menu-portfolio-box");
+const menuContact = document.querySelector(".menu-contact-box");
 const buttonLanguage = document.querySelector(".menu-language-box");
 const buttonLanguageFront = document.querySelector(".menu-language-box-side-front");
 const buttonLanguageMobile = document.querySelector(".menu-mobile-language-box");
@@ -202,6 +217,11 @@ const footerFront = document.querySelector(".footer-credits-box-side-front");
 
 function toggleLanguage(){
   // Navbar
+  menuHome.classList.toggle("back");
+  menuAbout.classList.toggle("back");
+  menuSkills.classList.toggle("back");
+  menuPortfolio.classList.toggle("back");
+  menuContact.classList.toggle("back");
   buttonLanguage.classList.toggle("back");
   buttonLanguageFront.classList.toggle("front");
   buttonLanguageMobile.classList.toggle("back");
@@ -256,4 +276,12 @@ function toggleLanguage(){
   // Footer
   footer.classList.toggle("back");
   footerFront.classList.toggle("front");
+}
+
+function sizeLi(){
+  menuHome.classList.toggle("menu-home-box-size");
+  menuAbout.classList.toggle("menu-about-box-size");
+  menuSkills.classList.toggle("menu-skills-box-size");
+  menuPortfolio.classList.toggle("menu-portfolio-box-size");
+  menuContact.classList.toggle("menu-contact-box-size");
 }

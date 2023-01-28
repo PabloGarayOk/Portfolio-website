@@ -45,11 +45,47 @@
 					<!--<i class="fa-solid fa-xmark"></i>-->
 					<img src="img/close-icon.svg" alt="cerrar menú" />
 				</button>
-	        	<li><a class="active" href="#home">Home</a></li>
-				<li><a href="#aboutme">About me</a></li>
-	        	<li><a href="#skills">Skills</a></li>
-	        	<li><a href="#portfolio">Portfolio</a></li>
-	        	<li><a href="#contact">Contact</a></li>
+				
+				<div class="menu-home-box <?= $_GET['side'] ? "back menu-home-box-size" : "" ?>">
+					<div class="menu-box-side menu-box-side-front">
+						<li><a class="active" href="#home">Home</a></li>
+					</div>
+					<div class="menu-box-side menu-box-side-back">
+						<li><a href="#home">Inicio</a></li>
+					</div>
+				</div>
+				<div class="menu-about-box <?= $_GET['side'] ? "back menu-about-box-size" : "" ?>">
+					<div class="menu-box-side menu-box-side-front">
+						<li><a href="#aboutme">About&nbsp;me</a></li>
+					</div>
+					<div class="menu-box-side menu-box-side-back">
+						<li><a href="#aboutme">Sobre m&iacute;</a></li>
+					</div>
+				</div>
+				<div class="menu-skills-box <?= $_GET['side'] ? "back menu-skills-box-size" : "" ?>">
+					<div class="menu-box-side menu-box-side-front">
+	        			<li><a href="#skills">Skills</a></li>
+					</div>
+					<div class="menu-box-side menu-box-side-back menu-habilidades">
+	        			<li><a href="#skills">Habilidades</a></li>
+					</div>
+				</div>
+				<div class="menu-portfolio-box <?= $_GET['side'] ? "back menu-portfolio-box-size" : "" ?>">
+					<div class="menu-box-side menu-box-side-front">
+	        			<li><a href="#portfolio">Portfolio</a></li>
+					</div>
+					<div class="menu-box-side menu-box-side-back">
+	        			<li><a href="#portfolio">Portafolio</a></li>
+					</div>
+				</div>
+				<div class="menu-contact-box <?= $_GET['side'] ? "back menu-contact-box-size" : "" ?>">
+					<div class="menu-box-side menu-box-side-front">
+	        			<li><a href="#contact">Contact</a></li>
+					</div>
+					<div class="menu-box-side menu-box-side-back">
+	        			<li><a href="#contact">Contacto</a></li>
+					</div>
+				</div>
 				<div class="menu-language">
 					<div class="menu-language-box <?= $_GET['side'] ? "back" : "" ?>">
 						<div id="flagA" class="menu-language-box-side menu-language-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
