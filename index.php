@@ -59,7 +59,7 @@
 						<li><a href="#aboutme">About&nbsp;me</a></li>
 					</div>
 					<div class="menu-box-side menu-box-side-back">
-						<li><a href="#aboutme">Sobre m&iacute;</a></li>
+						<li><a href="#aboutme">Sobre&nbsp;m&iacute;</a></li>
 					</div>
 				</div>
 				<div class="menu-skills-box <?= $_GET['side'] ? "back menu-skills-box-size" : "" ?>">
@@ -174,13 +174,13 @@
 					<div class="about-content-info">
 						<div class="about-content-info-who-box <?= $_GET['side'] ? "back" : "" ?>">
 							<div class="about-content-info-who-box-side about-content-info-who-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
-								<h3>Who I am?</h3>
+								<h3>Who&nbsp;I&nbsp;am?</h3>
 							</div>
 							<div class="about-content-info-who-box-side about-content-info-who-box-side-back">
 								<h3>¿Qui&eacute;n soy?</h3>
 							</div>
 						</div>
-						<div class="about-content-info-who-text-box <?= $_GET['side'] ? "backwho" : "" ?>">
+						<div class="about-content-info-who-text-box <?= $_GET['side'] ? "back-about-who-text" : "" ?>">
 							<div class="about-content-info-who-text-box-side about-content-info-who-text-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
 								<p>I am a proactive person, I can quickly adapt to changes. I like what I do and I really want to learn, that's why I continue training myself day by day in a self-taught way to grow as a professional.</p>
 								<p>I have communication and empathy skills to work in a team. Now I am looking for the opportunity to join a technology company, although at the moment I work autonomously.</p>
@@ -200,7 +200,7 @@
 								<h3>Mis Pasatiempos</h3>
 							</div>
 						</div>
-						<div class="about-content-details-hobbies-text-box <?= $_GET['side'] ? "back-hobbies" : "" ?>">
+						<div class="about-content-details-hobbies-text-box <?= $_GET['side'] ? "back-about-hobbies-text" : "" ?>">
 							<div class="about-content-details-hobbies-text-box-side about-content-details-hobbies-text-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
 								<p>I like outdoor sports, especially soccer, although the important thing is to spend time with family and friends. Photography, meeting new places and people.</p>
 							</div>
@@ -212,8 +212,8 @@
 				</div>
 			</div><!--end horizontal/vertical padding-->
 		</section><!--end section about me-->
-		<div class="horizontal-padding vertical-padding">
-			<section class="skills" id="skills">
+		<section class="skills" id="skills">
+			<div class="horizontal-padding vertical-padding">
 				<div class="skills-content-title">
 					<div class="skills-content-title-box <?= $_GET['side'] ? "back-skills" : "" ?>">
 						<div class="skills-content-title-box-side skills-content-title-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
@@ -241,8 +241,8 @@
 					<li>Illustrator</li>
 					<li>Photoshop</li>
 				</ul>
-			</section><!--end section skills-->
-		</div><!--end horizontal/vertical padding-->
+			</div><!--end horizontal/vertical padding-->
+		</section><!--end section skills-->
 		<section class="portfolio" id="portfolio">
 			<div class="horizontal-padding vertical-padding">
 				<div class="portfolio-content-title">

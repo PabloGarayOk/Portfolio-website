@@ -73,8 +73,8 @@
 
 /* Animacion About Who */
 
-.backwho{
-    margin-bottom: 25px;
+.back-about-who-text{  /*backwho*/
+    margin-bottom: 65px;
     transform: rotateY(180deg);
 }
 
@@ -114,7 +114,7 @@
 /* Fin Animacion About Who */
 /* Animacion About Who Text */
 .about-content-info-who-text-box {
-    height: 290px;
+    height: 405px;
     position: relative;
     transform-style: preserve-3d;
     transition: 1.7s;
@@ -172,16 +172,18 @@
 
 /* Animacion About Hobbies Text */
 
-.back-hobbies{
+.back-about-hobbies-text{
+    margin-bottom: 25px;
     transform: rotateY(180deg);
 }
 
 .about-content-details-hobbies-text-box {
-    height: 135px;
+    height: 189px;
     position: relative;
     transform-style: preserve-3d;
     transition: 1.7s;
-} 
+}
+
 
 .about-content-details-hobbies-text-box-side {
     position: absolute;
@@ -203,6 +205,83 @@
     font-size: 1.2em;
 }
 
+@media (min-width: 350px) {
+    .about-content-info-who-text-box {
+        height: 360px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 170px;
+    }
+
+    .back-about-hobbies-text{
+        margin-bottom: 9px;
+    }
+}
+
+@media (min-width: 379px) {
+    .about-content-info-who-text-box {
+        height: 348px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 160px;
+    }
+
+    .back-about-hobbies-text{
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 390px) {
+
+    .back-about-hobbies-text{
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 410px) {
+    .about-content-info-who-text-box {
+        height: 330px;
+    }
+
+    .back-about-who-text{
+        margin-bottom: 30px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 160px;
+    }
+
+}
+
+@media (min-width: 499px) {
+    .about-content-info-who-text-box {
+        height: 300px;
+    }
+
+    .back-about-who-text{
+        margin-bottom: 27px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 710px) {
+
+    .back-about-who-text{
+        margin-bottom: 26px;
+    }
+
+    .about-content-details-hobbies-text-box {
+        height: 137px;
+    }
+
+}
+
 @media (min-width: 950px) {
     .about-content {
         grid-template-columns: repeat(12, 1fr);
@@ -216,7 +295,7 @@
         text-align: right; 
     }
 
-    .backwho{
+    .back-about-who-text{
         margin-bottom: 40px;
     }
 
@@ -230,7 +309,8 @@
 
     .about-content-details {
         width: 100%;
-        /*height: 210px;*/
+        height: 250px;
+        margin-top: 19px;
         grid-column: 8/11;
         text-align: left;
     }
@@ -242,109 +322,52 @@
     .about-content-details-hobbies-box-side-front {
         margin-left: 0px;
     }
-}
 
-@media (min-width: 1079px) {
-    
-    .backwho{
-        margin-bottom: 20px;
+    .about-content-details-hobbies-text-box {
+        height: 221px;
     }
 
-    .about-content-info-who-text-box {
-        height: 270px;
-    } 
+}
 
+@media (min-width: 1023px) {
+    
     .about-content-info-who-box-side-front{
-        margin-left: 307px;
+        margin-left: 266px;
     }
+
+    .about-content-info-who-text-box {
+        height: 265px;
+    }
+
+    .back-about-who-text{
+        margin-bottom: 68px;
+    }
+
+    .about-content-details {
+        height: 230px;
+        margin-top: 0px;
+        padding-top: 51px;
+    }
+
 }
 
-@media (max-width: 420px){
+@media (min-width: 1080px) {
     
-    .backwho{
-        margin-bottom: 40px;
-    }
-    .back-hobbies{
-        margin-bottom: 0px;
+    .about-content-info-who-box-side-front{
+        margin-left: 315px;
     }
 
     .about-content-info-who-text-box {
-        height: 318px;
+        height: 260px;
     }
 
-    .about-content-details-hobbies-text-box {
-        height: 150px;
-    }
-}
-
-@media (max-width: 400px){
-    
-    .backwho{
-        margin-bottom: 40px;
-    }
-    .back-hobbies{
-        margin-bottom: 0px;
+    .back-about-who-text{
+        margin-bottom: 23px;
     }
 
-    .about-content-info-who-text-box {
-        height: 335px;
+    .about-content-details {
+        height: 205px;
+        padding-top: 26px;
     }
 
-    .about-content-details-hobbies-text-box {
-        height: 150px;
-    }
-}
-
-@media (max-width: 393px){
-    
-    .backwho{
-        margin-bottom: 60px;
-    }
-    .back-hobbies{
-        margin-bottom: 0px;
-    }
-
-    .about-content-info-who-text-box {
-        height: 340px;
-    }
-
-    .about-content-details-hobbies-text-box {
-        height: 150px;
-    }
-}
-
-@media (max-width: 375px){
-    .backwho{
-        margin-bottom: 60px;
-    }
-    
-    .back-hobbies{
-        margin-bottom: 20px;
-    }
-
-    .about-content-info-who-text-box {
-        height: 370px;
-    }
-
-    .about-content-details-hobbies-text-box {
-        height: 160px;
-    }
-}
-
-@media (max-width: 350px){
-    .backwho{
-        margin-bottom: 60px;
-    }
-
-    .back-hobbies{
-        margin-bottom: 20px;
-    }
-
-    .about-content-info-who-text-box {
-        height: 400px;
-    }
-
-    .about-content-details-hobbies-text-box {
-        height: 160px;
-    }
 }

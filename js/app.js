@@ -242,11 +242,11 @@ function toggleLanguage(){
   aboutTitleFront.classList.toggle("front");
   aboutWho.classList.toggle("back");
   aboutWhoFront.classList.toggle("front");
-  aboutWhoText.classList.toggle("backwho");
+  aboutWhoText.classList.toggle("back-about-who-text"); // backwho
   aboutWhoTextFront.classList.toggle("front");
   aboutHobbies.classList.toggle("back");
   aboutHobbiesFront.classList.toggle("front");
-  aboutHobbiesText.classList.toggle("back-hobbies");
+  aboutHobbiesText.classList.toggle("back-about-hobbies-text"); //back-hobbies
   aboutHobbiesTextFront.classList.toggle("front");
   // Skills
   skillsTitle.classList.toggle("back-skills");
