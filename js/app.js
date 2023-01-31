@@ -209,6 +209,8 @@ const contactTitle = document.querySelector(".contact-content-title-box");
 const contactTitleFront = document.querySelector(".contact-content-title-box-side-front");
 const contactForm = document.querySelector(".contact-content-form-box");
 const contactFormInput = document.querySelector(".contact-group-front");
+const space = document.getElementById('space');
+const spaceBack = document.getElementById('space-back');
 const contactLinks = document.querySelector(".contact-content-links-box");
 const contactLinksFront = document.querySelector(".contact-content-links-box-side-front");
 // Footer
@@ -271,6 +273,14 @@ function toggleLanguage(){
   contactTitleFront.classList.toggle("front");
   contactForm.classList.toggle("back");
   contactFormInput.classList.toggle("front");
+  // space.classList.toggle("display");
+  setTimeout(() => {
+    console.log(space.classList.toggle("display"))
+  }, 370);
+  setTimeout(() => {
+    console.log(spaceBack.classList.toggle("display"))
+  }, 370);
+  // spaceBack.classList.toggle("display");
   contactLinks.classList.toggle("back");
   contactLinksFront.classList.toggle("front");
   // Footer

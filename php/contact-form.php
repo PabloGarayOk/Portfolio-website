@@ -2,7 +2,7 @@
 	
    if(!$_POST) exit;
 
-   //Capturamos los datos enviados por POST desde la pagina cotizaciones
+   //Capturamos los datos enviados por POST desde el formulario de la pagina
 
    $to               = 'hello@pablogaray.com.ar';
    $name             = $_POST["name"];
@@ -14,7 +14,7 @@
 
    if(!preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $email)){
     
-      header("location:../index.php?feedback=C&name=$name&email=$email&message=$message#contact");
+      header("location:../index.php?feedback=C&space=space-c&name=$name&email=$email&message=$message#contact");
       exit;
 
    }else{
@@ -28,6 +28,8 @@
       
       //Armamos el mensaje
 
+      $message        = utf8_decode($message); //Codificamos a utf8 el mensaje
+
       $fullMessage    = "Nombre: " . $name . "\r\n";
       $fullMessage   .= "Email: " . $email . "\r\n";
       $fullMessage   .= "Mensaje: " . $message . "\r\n";
@@ -36,16 +38,16 @@
 
       $sentMail = @mail($to, $subject, $fullMessage, $headers);
        
-      //Comprobamos
+      //Respondemos
 
       if($sentMail){
        
-         header("location:../index.php?feedback=A#contact");
+         header("location:../index.php?feedback=A&space=space-a#contact");
          exit;      
        
       }else{
-       
-         header("location:../index.php?feedback=B&name=$name&email=$email&message=$message#contact");
+
+         header("location:../index.php?feedback=B&space=space-b&name=$name&email=$email&message=$message#contact");
          exit;
       }
    }

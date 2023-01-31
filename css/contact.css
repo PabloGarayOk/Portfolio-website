@@ -12,7 +12,7 @@
 
 .contact-content-title {
     width: 161px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     align-items: center;
 }
 
@@ -62,12 +62,43 @@
 
 form {
     display: block;
-    width: 100%; /*83*/
+    width: 100%;
     max-width: 420px;
-    margin: 40px auto 0 auto;
+    height: auto;
+    margin: 0px auto 0px auto;
     padding: 30px 0 20px 0;
     background-color: var(--theme-color-inverse);
     border-radius: 20px;
+}
+
+.display{
+    display: none;
+}
+
+.space,
+.space-back {
+    margin-top: 30px;
+}
+
+.space-a,
+.space-back-a{
+    margin-top: 80px;
+}
+
+.space-b {
+    margin-top: 140px;
+}
+
+.space-back-b{
+    margin-top: 140px;
+}
+
+.space-c {
+    margin-top: 80px;
+}
+
+.space-back-c{
+    margin-top: 170px;
 }
 
 /* .contact-content-form {
@@ -84,8 +115,8 @@ form {
 /* Animacion Formulario de Contacto */
 
 .contact-content-form-box{
-    height: 450px;/*443px*/
-    width: 100%; /*270px*/
+    height: 412px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     transform-style: preserve-3d;
@@ -212,7 +243,6 @@ textarea:focus~.contact-line::before {
 
 .contact-links {
     width: 230px;
-    /* margin: 40px auto 0px auto; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -232,7 +262,7 @@ textarea:focus~.contact-line::before {
 .contact-content-links-box{
     height: 29px;
     width: 230px;
-    margin: 40px auto 0px auto;
+    margin: 0px auto;
     position: relative;
     transform-style: preserve-3d;
     transition: 1.5s;
@@ -249,16 +279,57 @@ textarea:focus~.contact-line::before {
 }
 
 .contact-content-links-box-side-back{
-    /* margin-top: 30px; Vuela */
     transform: rotateY(180deg);
 }
 
 /* Fin Animacion Links */
 
+@media (min-width: 359px) {
+
+    .space-b{
+        margin-top: 80px;
+    }
+
+    .space-back-b{
+        margin-top: 110px;
+    }
+
+    .space-back-c{
+        margin-top: 115px;
+    }
+
+}
+
 @media (min-width: 380px) {
 
     .contact-content-form-box{
         width: 90%;
+    }
+
+}
+
+@media (min-width: 413px) {
+
+    .space-back-b{
+        margin-top: 85px;
+    }
+
+}
+
+@media (min-width: 499px) {
+
+    .space-a,
+    .space-b,
+    .space-c {
+        margin-top: 60px;
+    }
+
+    .space-back-a{
+        margin-top: 60px;
+    }
+
+    .space-back-c{
+        margin-top: 85px;
     }
 
 }
@@ -271,13 +342,11 @@ textarea:focus~.contact-line::before {
     }
 
     .contact-content-form-box{
-        height: 510px;
         width: 100%;
     }
     
     .contact-content-links-box{
         width: 280px;
-        margin: -20px auto 0px auto;
     }
     
     .contact-links {
@@ -287,6 +356,12 @@ textarea:focus~.contact-line::before {
     .contact-links i {
         font-size: 30px; 
     }
+
+    .space-a,
+    .space-b,
+    .space-c {
+        margin-top: 50px;
+    }
     
 }
 
@@ -294,22 +369,37 @@ textarea:focus~.contact-line::before {
     form {
         width: 51%;
         max-width: 550px;
-    }
-
-    .contact-content-form-box{
-        height: 455px;
+        height: fit-content;
     }
 
     .contact-content-links-box{
         width: 350px;
-        margin: 30px auto 0px auto;
+        height: 32px;
     }
 
     .contact-links {
         width: 350px;
+        /* height: 50px;
+        padding: 20px 0 0 0;
+        align-items: center; */
     }
 
     .contact-links i {
         font-size: 35px; 
+    }
+
+    .space-back-b{
+        margin-top: 65px;
+    }
+
+    .space-back-c{
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .space-back-c{
+        margin-top: 70px;
     }
 }

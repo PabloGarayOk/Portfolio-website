@@ -527,23 +527,23 @@
 				
 				<div class="contact-content-form-box <?= $_GET['side'] ? "back" : "" ?>">
 					<div class="contact-content-form-box-side">
-						<form name="contact_form" id="contact_form" action="php/contact-form.php" method="post" onsubmit="return validar();">					
+						<form name="contact_form" id="contact_form" action="php/contact-form.php" method="post" autocomplete="off" onsubmit="return validar();">					
 							<div class="contact-group-front <?= $_GET['side'] ? "front" : "" ?>">
 								<?php
 									include("php/feedback.php");
 								?>
 								<div class="contact-row">
-									<input type="text" name="name" id="name" placeholder="" value="<?= $_GET['name'] ? $_GET['name'] : "" ?>" required="">
+									<input type="text" name="name" id="name" placeholder="" value="<?= $_GET['name'] ? $_GET['name'] : "" ?>" required>
 									<span class="contact-line"></span>
 									<label>Name</label>
 								</div>
 								<div class="contact-row">
-									<input type="email" name="email" id="email" placeholder="" value="<?= $_GET['email'] ? $_GET['email'] : "" ?>" required="">
+									<input type="email" name="email" id="email" placeholder="" value="<?= $_GET['email'] ? $_GET['email'] : "" ?>" required>
 									<span class="contact-line"></span>
 									<label>E-mail</label>             
 								</div>
 								<div class="contact-row">    
-									<textarea name="message" id="message" rows="3" placeholder="" required=""><?= $_GET['message'] ? $_GET['message'] : "" ?></textarea>
+									<textarea name="message" id="message" rows="3" max-rows="3" placeholder="" required><?= $_GET['message'] ? $_GET['message'] : "" ?></textarea>
 									<span class="contact-line"></span>
 									<label class="contact-message">Message</label>
 								</div>
@@ -554,23 +554,23 @@
 						</form>							
 					</div>
 					<div class="contact-content-form-box-side contact-content-form-box-side-back">
-						<form name="contact_form_back" id="contact_form_back" action="php/formulario-de-contacto.php" method="post" onsubmit="return validarBack();">
+						<form name="contact_form_back" id="contact_form_back" action="php/formulario-de-contacto.php" method="post" autocomplete="off" onsubmit="return validarBack();">
 							<div class="contact-group-back">
 								<?php
 									include("php/respuestas.php");
 								?>
 								<div class="contact-row">
-									<input type="text" name="nombre" id="nombre" placeholder="" value="<?= $_GET['nombre'] ? $_GET['nombre'] : "" ?>" required="">
+									<input type="text" name="nombre" id="nombre" placeholder="" value="<?= $_GET['nombre'] ? $_GET['nombre'] : "" ?>" required>
 									<span class="contact-line"></span>
 									<label>Nombre</label>
 								</div>
 								<div class="contact-row">
-									<input type="email" name="correo" id="correo" placeholder="" value="<?= $_GET['correo'] ? $_GET['correo'] : "" ?>" required="">
+									<input type="email" name="correo" id="correo" placeholder="" value="<?= $_GET['correo'] ? $_GET['correo'] : "" ?>" required>
 									<span class="contact-line"></span>
 									<label>Correo electr&oacute;nico</label>             
 								</div>
 								<div class="contact-row">    
-									<textarea name="mensaje" id="mensaje" rows="3" placeholder="" required=""><?= $_GET['mensaje'] ? $_GET['mensaje'] : "" ?></textarea>
+									<textarea name="mensaje" id="mensaje" rows="3" placeholder="" required><?= $_GET['mensaje'] ? $_GET['mensaje'] : "" ?></textarea>
 									<span class="contact-line"></span>
 									<label class="contact-message">Mensaje</label>
 								</div>
@@ -581,9 +581,11 @@
 						</form>
 					</div>	
 				</div>				
-
+				<div id="space" class="<?= $_GET['space'] ? $_GET['space'] : "space" ?> <?= $_GET['side'] ? "display" : "" ?>"></div>
+				<div id="space-back" class="<?= $_GET['space-back'] ? $_GET['space-back'] : "space-back" ?> <?= $_GET['side'] ? "" : "display" ?>"></div>
 				<div class="contact-content-links-box <?= $_GET['side'] ? "back" : "" ?>">
 					<div class="contact-content-links-box-side contact-content-links-box-side-front <?= $_GET['side'] ? "front" : "" ?>">
+						
 						<div class="contact-links">							
 							<a href="mailto:hello@pablogaray.com.ar">
 								<i class="fa-solid fa-envelope"></i>
@@ -600,6 +602,7 @@
 						</div>
 					</div>
 					<div class="contact-content-links-box-side contact-content-links-box-side-back">
+						
 						<div class="contact-links">							
 							<a href="mailto:hola@pablogaray.com.ar">
 								<i class="fa-solid fa-envelope"></i>
@@ -620,6 +623,7 @@
 			</div><!--end horizontal/vertical padding-->
 		</section><!--end section contact-->
 	</div><!--end main-->
+
 	<footer class="footer">		
 		<div class="footer-credits">
 			<div class="footer-credits-box <?= $_GET['side'] ? "back" : "" ?>">
