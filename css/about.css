@@ -6,13 +6,6 @@
     color: var(--theme-color);
 }
 
-/* About original*/
-/* .about-title {
-    width: 200px;
-    margin: 0 auto;
-    align-items: center;    
-} */
-
 /* Animacion About title*/
 
 .about-title {
@@ -54,6 +47,7 @@
     border-radius: 20px;
 }
 /* Fin Animacion Divider */
+
 .about-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -63,17 +57,9 @@
     justify-content: space-evenly;
 }
 
-/* .about-content-info {
-    width: 100%;
-    max-width: 450px;
-    grid-column: 1/1;
-    text-align: center; 
-    margin: 0 auto;
-} */
-
 /* Animacion About Who */
 
-.back-about-who-text{  /*backwho*/
+.back-about-who-text {
     margin-bottom: 65px;
     transform: rotateY(180deg);
 }
@@ -112,6 +98,7 @@
 }
 
 /* Fin Animacion About Who */
+
 /* Animacion About Who Text */
 .about-content-info-who-text-box {
     height: 405px;

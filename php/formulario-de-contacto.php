@@ -14,7 +14,7 @@
 
    if(!preg_match('/\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i', $correo)){
     
-      header("location:../index.php?respuestas=C&side=''&space-back=space-back-c&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
+      header("location:../index.php?respuestas=C&side=es&space-back=space-back-c&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
       exit;
 
    }else{
@@ -42,12 +42,12 @@
 
       if($sentMail){
        
-         header("location:../index.php?respuestas=A&side=''&space-back=space-back-a#contact");
+         header("location:../index.php?respuestas=A&side=es&space-back=space-back-a#contact");
          exit;      
        
       }else{
        
-         header("location:../index.php?respuestas=B&side=''&space-back=space-back-b&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
+         header("location:../index.php?respuestas=B&side=es&space-back=space-back-b&nombre=$nombre&correo=$correo&mensaje=$mensaje#contact");
          exit;
       }
    }

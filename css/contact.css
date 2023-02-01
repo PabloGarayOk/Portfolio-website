@@ -2,12 +2,6 @@
     text-align: center;
 }
 
-/* .contact-content-title {
-    width: 164px;
-    margin: 0 auto;
-    align-items: center;
-} */
-
 /* Animacion Contact */
 
 .contact-content-title {
@@ -100,17 +94,6 @@ form {
 .space-back-c{
     margin-top: 170px;
 }
-
-/* .contact-content-form {
-    display: block;
-    width: 83%;
-    height: 441px;
-    max-width: 420px;
-    margin: 40px auto 0 auto;
-    padding: 30px 0 20px 0;
-    background-color: var(--theme-color-inverse);
-    border-radius: 20px;
-} */
 
 /* Animacion Formulario de Contacto */
 
@@ -379,9 +362,6 @@ textarea:focus~.contact-line::before {
 
     .contact-links {
         width: 350px;
-        /* height: 50px;
-        padding: 20px 0 0 0;
-        align-items: center; */
     }
 
     .contact-links i {

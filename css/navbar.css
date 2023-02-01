@@ -17,7 +17,6 @@
 }
 
 /* Logo */
-
 .brand {
  margin-top: -7px;
 }
@@ -72,7 +71,6 @@
 }
 
 /* Animacion Menu */
-
 .menu-home-box {
   height: 20px;
   width: 114px;
@@ -148,7 +146,6 @@
 /* End Animacion Menu */
 
 /* Boton Idioma */
-
 .back{
   transform: rotateY(180deg);
 }
@@ -156,10 +153,6 @@
 .front {
   transition-delay: 7s;    
   transform: rotatex(90deg);
-}
-
-.back360{
-  transform: rotateY(360deg);
 }
 
 /* Animacion Boton Language */
@@ -271,7 +264,6 @@
   .close-menu {
     align-self: flex-end;
     padding: 33px 38px 0px 0px;
-    /*padding: 41px 27px 0px 0px;*/
   }
 
   .menu_opened {

@@ -2,12 +2,6 @@
     text-align: center;
 }
 
-/* .skills-content-title {
-    width: 270px;
-    margin: 0 auto;
-    align-items: center;
-} */
-
 /* Animacion Skills */
 .back-skills{
     margin-bottom: 55px;
@@ -60,26 +54,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/*sombra original*/
-/*.skills-list li {
-    font-size: 1.2em;
-    font-weight: 500;
-    color: var(--text-color);
-    box-shadow: 0 4px 10px rgb(255 255 255 / 25%);
-    box-shadow: 0 4px 10px rgba(8, 8, 8, 0.808);no
-    border-radius: 42px;
-    padding: .5em .7em;
-}*/
-
-/*Sombra verde agua*/
-/*.skills-list li {
-    font-size: 1.2em;
-    font-weight: 500;
-    box-shadow: 3px 3px 5px var(--primary-color);
-    border-radius: 42px;
-    padding: .5em .7em;
-    margin: .5em;  
-}*/
 
 /*Sombra blanca*/
 .skills-list li {

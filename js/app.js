@@ -10,22 +10,17 @@ openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
 const menuLinks = document.querySelectorAll(".menu a[href^='#']");
-// const menuLinksBacks = document.querySelectorAll(".menu a[href^='#']")[1];
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       const id = entry.target.getAttribute("id");
       const menuLink = document.querySelector(`.menu a[href="#${id}"]`);
-      // const menuLinkBack = document.querySelectorAll(`.menu a[href="#${id}"]`)[1];
       const menuActive = document.querySelector(".menu a.active");
-      // const menuActiveBack = document.querySelectorAll(".menu a.active")[1];
 
       if (entry.isIntersecting) {
         menuActive.classList.remove("active");
-        // menuActiveBAck.classList.remove("active");
         menuLink.classList.add("active");
-       //  menuLinkBack.classList.add("active");
       }
 
     });

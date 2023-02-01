@@ -3,15 +3,7 @@
     padding-bottom: 1em;
 }
 
-/* .home-img img {
-    padding: 14px;
-    width: 80%;
-    max-width: 300px;
-    border-radius: 50%;
-    background-color: var(--image-transparent-background-color);
-} */
 /* Imagen */
-
 .home-img {
     height: 300px;
     width: 270px;
@@ -58,9 +50,6 @@
 }
 
 /* Saludo Hola */
-.home-info-greeting {
-
-}
 
 .home-info-greeting-box {
     height: 48px;
@@ -88,9 +77,6 @@
 /* Fin Saludo Hola */
 
 /* Saludo Soy Pablo Garay*/
-.home-info-name{
-    
-}
 .home-info-name-box{
     padding-bottom: 30px;
     width: 100%;
@@ -116,10 +102,6 @@
 /* Fin Saludo Hola Soy Pablo Garay*/
 
 /*Subtitulo Web designer*/
-.home-info-subtitle{
-
-}
-
 .home-info-subtitle-box{
     width: 100%;
     position: relative;
@@ -155,7 +137,7 @@
 }
 .home-info-download{
     height: 40px;
-    width: 100%; /*215px 150px*/
+    width: 100%;
     margin: 80px auto 10px auto;
     -webkit-perspective:1950;
 }

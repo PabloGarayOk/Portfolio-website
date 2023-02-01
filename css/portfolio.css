@@ -12,12 +12,6 @@
     color: var(--text-color);
 }
 
-/* .portfolio-content-title {
-    width: 200px;
-    margin: 0 auto;
-    align-items: center;
-} */
-
 /* Animacion Portfolio */
 
 .portfolio-content-title {
@@ -71,128 +65,13 @@
     justify-content: space-evenly;
 }
 
-/* Animacion Portfolio Cards 1*/
+/* Animacion Portfolio Cards 1, 2, 3, 4, 5, 6 */
 
-.portfolio-container-cards-box1 {
-    height: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-} 
-
-.portfolio-container-cards-box-side1 {   
-    position: absolute;
-    -moz-backface-visibility: hidden;
-         backface-visibility: hidden;
-}
-
-.portfolio-container-cards-box-side-front1{
-    transform: rotateX(0deg);
-}
-
-.portfolio-container-cards-box-side-back1{
-    transform: rotateY(180deg);
-}
-
-/* Fin Animacion Portfolio Cards 1*/
-/* Animacion Portfolio Cards 2 */
-
-.portfolio-container-cards-box2 {
-    height: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-} 
-
-.portfolio-container-cards-box-side2 {    
-    position: absolute;
-    -moz-backface-visibility: hidden;
-         backface-visibility: hidden;
-}
-
-.portfolio-container-cards-box-side-front2{
-    transform: rotateX(0deg);
-}
-
-.portfolio-container-cards-box-side-back2 {
-    transform: rotateY(180deg);
-}
-
-/* Fin Animacion Portfolio Cards 2*/
-/* Animacion Portfolio Cards 3 */
-
-.portfolio-container-cards-box3 {
-    height: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-} 
-
-.portfolio-container-cards-box-side3 {    
-    position: absolute;
-    -moz-backface-visibility: hidden;
-         backface-visibility: hidden;
-}
-
-.portfolio-container-cards-box-side-front3{
-    transform: rotateX(0deg);
-}
-
-.portfolio-container-cards-box-side-back3 {
-    transform: rotateY(180deg);
-}
-
-/* Fin Animacion Portfolio Cards 3*/
-/* Animacion Portfolio Cards 4 */
-
-.portfolio-container-cards-box4 {
-    height: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-} 
-
-.portfolio-container-cards-box-side4 {    
-    position: absolute;
-    -moz-backface-visibility: hidden;
-         backface-visibility: hidden;
-}
-
-.portfolio-container-cards-box-side-front4{
-    transform: rotateX(0deg);
-}
-
-.portfolio-container-cards-box-side-back4 {
-    transform: rotateY(180deg);
-}
-
-/* Fin Animacion Portfolio Cards 4*/
-/* Animacion Portfolio Cards 5 */
-
-.portfolio-container-cards-box5 {
-    height: 350px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-} 
-
-.portfolio-container-cards-box-side5 {    
-    position: absolute;
-    -moz-backface-visibility: hidden;
-         backface-visibility: hidden;
-}
-
-.portfolio-container-cards-box-side-front5{
-    transform: rotateX(0deg);
-}
-
-.portfolio-container-cards-box-side-back5 {
-    transform: rotateY(180deg);
-}
-
-/* Fin Animacion Portfolio Cards 5*/
-/* Animacion Portfolio Cards 6 */
-
+.portfolio-container-cards-box1,
+.portfolio-container-cards-box2,
+.portfolio-container-cards-box3,
+.portfolio-container-cards-box4,
+.portfolio-container-cards-box5,
 .portfolio-container-cards-box6 {
     height: 350px;
     position: relative;
@@ -200,21 +79,37 @@
     transition: 1.5s;
 } 
 
-.portfolio-container-cards-box-side6 {    
+.portfolio-container-cards-box-side1,
+.portfolio-container-cards-box-side2,
+.portfolio-container-cards-box-side3,
+.portfolio-container-cards-box-side4,
+.portfolio-container-cards-box-side5,
+.portfolio-container-cards-box-side6 {   
     position: absolute;
     -moz-backface-visibility: hidden;
          backface-visibility: hidden;
 }
 
-.portfolio-container-cards-box-side-front6{
+.portfolio-container-cards-box-side-front1,
+.portfolio-container-cards-box-side-front2,
+.portfolio-container-cards-box-side-front3,
+.portfolio-container-cards-box-side-front4,
+.portfolio-container-cards-box-side-front5,
+.portfolio-container-cards-box-side-front6 {
     transform: rotateX(0deg);
 }
 
+.portfolio-container-cards-box-side-back1,
+.portfolio-container-cards-box-side-back2,
+.portfolio-container-cards-box-side-back3,
+.portfolio-container-cards-box-side-back4,
+.portfolio-container-cards-box-side-back5,
 .portfolio-container-cards-box-side-back6 {
     transform: rotateY(180deg);
 }
 
-/* Fin Animacion Portfolio Cards 6*/
+/* Fin Animacion Portfolio Cards 1, 2, 3, 4, 5, 6 */
+
 .portfolio-card {
     text-align: center;
     align-items: center;
@@ -222,9 +117,7 @@
     background-color: var(--theme-color);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(8, 8, 8, 0.4);
-    /*transition: transform 2 all;*/
     transition: all .3s;
-    /*border: solid 1px rgb(1, 42, 119);*/
 }
 
 .portfolio-card-title {

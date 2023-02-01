@@ -45,26 +45,26 @@
 }
 /* Animacion Credits */
 
-.footer-credits-box{
+.footer-credits-box {
     height: 69px;   
-    width: 311px; /*290px*/ 
-    margin: 5px auto 5px auto; /*ver*/
+    width: 311px;
+    margin: 5px auto 5px auto;
     position: relative;
     transform-style: preserve-3d;
     transition: 1.5s;
 }
 
-.footer-credits-box-side{
+.footer-credits-box-side {
     position: absolute;
     -moz-backface-visibility: hidden;
          backface-visibility: hidden;
 }
 
-.footer-credits-box-side-back{
+.footer-credits-box-side-back {
     transform: rotateY(180deg);
 }
 
-.footer-credits-box-side-front{
+.footer-credits-box-side-front {
     background-color: var(--menu-mobile-background-color);
     transform: rotateX(0deg); 
 }
@@ -96,7 +96,7 @@
         font-size: .85em;
     }
 
-    .footer-credits-box-side-front{
+    .footer-credits-box-side-front {
         width: 491px;
     }
 
