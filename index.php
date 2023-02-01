@@ -103,10 +103,10 @@
 				<div class="home-img">
 					<div class="home-img-box <?= $_GET['side']=='es' ? "back" : "" ?>">
 						<div class="home-img-box-side home-img-box-side-front <?= $_GET['side']=='es' ? "front" : "" ?>">
-							<img src="./img/picture.png" alt="john doe picture">
+							<img src="./img/picture.webp"  width="328" alt="john doe picture">
 						</div>
 						<div class="home-img-box-side home-img-box-side-back">
-							<img src="./img/fotografia.png" alt="fotografia john doe">
+							<img src="./img/fotografia.webp"  width="328" alt="fotografia john doe">
 						</div>	
 					</div>
 				</div>
@@ -121,10 +121,10 @@
 					</div>
 					<div class="home-info-name-box <?= $_GET['side']=='es' ? "back" : "" ?>">
 						<div class="home-info-name-box-side home-info-name-box-side-front <?= $_GET['side']=='es' ? "front" : "" ?>">
-							<h1>I'm <span>John </span>Doe</h1>
+							<h1>I'm&nbsp;<span>John</span>&nbsp;Doe</h1>
 						</div>
 						<div class="home-info-name-box-side home-info-name-box-side-back"> 
-							<h1>Soy <span>John </span>Doe</h1>
+							<h1>Soy&nbsp;<span>John</span>&nbsp;Doe</h1>
 						</div>
 					</div>
 					<div class="home-info-subtitle-box <?= $_GET['side']=='es' ? "back" : "" ?>">
@@ -138,10 +138,10 @@
 					<div class="home-info-download">
 						<div class="home-info-download-box <?= $_GET['side']=='es' ? "back" : "" ?>">
 							<div class="home-info-download-box-side home-info-download-box-side-front <?= $_GET['side']=='es' ? "front" : "" ?>">
-								<a target="_blank" href="./pdf/pablo-garay-resume.pdf">Download Resume</a>
+								<a target="_blank" href="./pdf/john-doe-resume.pdf">Download Resume</a>
 							</div>
 							<div class="home-info-download-box-side home-info-download-box-side-back">
-								<a target="_blank" href="./pdf/cv-pablo-garay.pdf">Descargar CV</a>
+								<a target="_blank" href="./pdf/john-doe-resume.pdf">Descargar CV</a>
 							</div>
 						</div>
 					</div>					
@@ -261,7 +261,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portfolio-projects.png" alt="project one">
+											<img src="img/portfolio-projects.webp" width="296" height="150" alt="project one">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project One</h4>
@@ -280,7 +280,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portafolio-proyectos.png" alt="proyecto uno">
+											<img src="img/portafolio-proyectos.webp" width="296" height="150" alt="proyecto uno">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Uno</h4>
@@ -302,7 +302,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portfolio-projects.png" alt="project two">
+											<img src="img/portfolio-projects.webp" width="296" heigth="150" alt="project two">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project Two</h4>
@@ -321,7 +321,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portafolio-proyectos.png" alt="proyecto dos">
+											<img src="img/portafolio-proyectos.webp" width="296" heigth="150" alt="proyecto dos">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Dos</h4>
@@ -343,7 +343,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portfolio-projects.png" alt="projetc three">
+											<img src="img/portfolio-projects.webp" width="296" heigth="150" alt="projetc three">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project Three</h4>
@@ -362,7 +362,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portafolio-proyectos.png" alt="proyecto tres">
+											<img src="img/portafolio-proyectos.webp" width="296" heigth="150" alt="proyecto tres">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Tres</h4>
@@ -384,7 +384,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img ">
-											<img src="img/portfolio-projects.png" alt="project four">
+											<img src="img/portfolio-projects.webp" width="296" heigth="150" alt="project four">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project Four</h4>
@@ -403,7 +403,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img ">
-											<img src="img/portafolio-proyectos.png" alt="proyecto cuatro">
+											<img src="img/portafolio-proyectos.webp" width="296" heigth="150" alt="proyecto cuatro">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Cuatro</h4>
@@ -425,7 +425,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portfolio-projects.png" alt="project five">
+											<img src="img/portfolio-projects.webp" width="296" heigth="150" alt="project five">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project Five</h4>
@@ -444,7 +444,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portafolio-proyectos.png" alt="proyecto cinco">
+											<img src="img/portafolio-proyectos.webp" width="296" heigth="150" alt="proyecto cinco">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Cinco</h4>
@@ -466,7 +466,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portfolio-projects.png" alt="project six">
+											<img src="img/portfolio-projects.webp" width="296" heigth="150" alt="project six">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Project Six</h4>
@@ -485,7 +485,7 @@
 								<div class="portfolio-card">
 									<a href="#" target="_blank">
 										<div class="portfolio-card-img">
-											<img src="img/portafolio-proyectos.png" alt="proyecto seis">
+											<img src="img/portafolio-proyectos.webp" width="296" heigth="150" alt="proyecto seis">
 										</div>
 									</a>
 									<h4 class="portfolio-card-title">Proyecto Seis</h4>
@@ -539,7 +539,7 @@
 									<label>E-mail</label>             
 								</div>
 								<div class="contact-row">    
-									<textarea name="message" id="message" rows="3" max-rows="3" placeholder="" required><?= $_GET['message'] ? $_GET['message'] : "" ?></textarea>
+									<textarea name="message" id="message" rows="3" placeholder="" required><?= $_GET['message'] ? $_GET['message'] : "" ?></textarea>
 									<span class="contact-line"></span>
 									<label class="contact-message">Message</label>
 								</div>
@@ -626,12 +626,12 @@
 			<div class="footer-credits-box <?= $_GET['side']=='es' ? "back" : "" ?>">
 				<?php include_once "./php/malvinas.php";?>
 				<div class="footer-credits-box-side footer-credits-box-side-front <?= $_GET['side']=='es' ? "front" : "" ?>">
-					<p class="footer-malvinas"><?= $conmemoracion; ?><img src="./img/islas-malvinas.png" alt="islas malvinas"> Years.</p>
-					<p class="footer-autor"><i>&copy; 2021 - <?php echo date("Y");?> · Powered by: <span class="footer-name">John Doe</span> · Your City, Your Country.</i></p>
+					<p class="footer-malvinas"><?= $conmemoracion; ?><img src="./img/islas-malvinas.png" width="40" height="17" alt="islas malvinas"> Years.</p>
+					<p class="footer-autor"><i>&copy; 2021 - <?php echo date("Y");?> · Powered by:&nbsp;<span class="footer-name">John Doe</span>&nbsp;· Your City, Your Country.</i></p>
 				</div>
 				<div class="footer-credits-box-side footer-credits-box-side-back">
-					<p class="footer-malvinas"><?= $conmemoracion; ?><img src="./img/islas-malvinas.png" alt="islas malvinas"> A&ntilde;os.</p> 
-					<p class="footer-autor"><i>&copy; 2021 - <?php echo date("Y");?> · Desarrollado por: <span class="footer-name">John Doe</span> · Tu Ciudad, Tu Pa&iacute;s.</i></p>
+					<p class="footer-malvinas"><?= $conmemoracion; ?><img src="./img/islas-malvinas.png" width="40" height="17" alt="islas malvinas"> A&ntilde;os.</p> 
+					<p class="footer-autor"><i>&copy; 2021 - <?php echo date("Y");?> · Desarrollado por:&nbsp;<span class="footer-name">John Doe</span>&nbsp;· Tu Ciudad, Tu Pa&iacute;s.</i></p>
 				</div>
 			</div>
 		</div>

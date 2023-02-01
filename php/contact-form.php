@@ -4,7 +4,7 @@
 
    //Capturamos los datos enviados por POST desde el formulario de la pagina
 
-   $to               = 'hello@pablogaray.com.ar';
+   $to               = 'hello@johndoe.com.ar';
    $name             = $_POST["name"];
    $email            = $_POST["email"];
    $subject          = 'Consulta de la web Portfolio';
