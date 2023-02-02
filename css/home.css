@@ -3,7 +3,35 @@
     padding-bottom: 1em;
 }
 
-.home-img img {
+/* Imagen */
+.home-img {
+    height: 300px;
+    width: 270px;
+    margin: 0 auto -55px auto;
+}
+
+.home-img-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.9s;
+}
+
+.home-img-box-side {
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+}
+
+.home-img-box-side-front {
+    transform: rotateX(0deg);
+}
+
+.home-img-box-side-back {
+    transform: rotateY(180deg);
+}
+
+.home-img-box-side img {
     padding: 14px;
     width: 80%;
     max-width: 300px;
@@ -11,18 +39,95 @@
     background-color: var(--image-transparent-background-color);
 }
 
+/* Fin Imagen */
+
 .home-info {
     margin: 25px 0 20px 0;
-}
 
-.home-info span{
+}
+.home-info span {
     color: var(--primary-color);
 }
 
-.home-subtitle {
-    text-transform: uppercase;
-    margin-top: 5px;
+/* Saludo Hola */
+
+.home-info-greeting-box {
+    height: 48px;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
 }
+
+.home-info-greeting-box-side {
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+}
+
+.home-info-greeting-box-side-front {
+    transform: rotateX(0deg);
+}
+
+.home-info-greeting-box-side-back {
+    transform: rotateY(180deg);
+}
+/* Fin Saludo Hola */
+
+/* Saludo Soy Pablo Garay*/
+.home-info-name-box{
+    padding-bottom: 30px;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.7s;
+}
+.home-info-name-box-side{
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+}
+
+.home-info-name-box-side-front{
+    transform: rotateX(0deg);
+}
+
+.home-info-name-box-side-back{
+    transform: rotateY(180deg);
+}
+/* Fin Saludo Hola Soy Pablo Garay*/
+
+/*Subtitulo Web designer*/
+.home-info-subtitle-box{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.9s;
+}
+
+.home-info-subtitle-box-side {
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+}
+
+.home-info-subtitle-box-side-front {
+    transform: rotateX(0deg);
+}
+
+.home-info-subtitle-box-side-back {
+    transform: rotateY(180deg);
+}
+
+/*Fin Subtitulo Web designer*/
 
 .home-details {
     font-size: 1.3em;
@@ -30,27 +135,101 @@
     max-width: 450px;
     margin: 20px auto;
 }
+.home-info-download{
+    height: 40px;
+    width: 100%;
+    margin: 80px auto 10px auto;
+    -webkit-perspective:1950;
+}
+.home-info-download-box{
+    width: 200px;
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2.1s;
+}
 
-.home-download-resume {
-    padding: .7em 1.4em;
+.home-info-download-box-side {
+    height: 28px;
+    width: 200px;
+    padding-top: .7em;
     background-color: var(--primary-color);
     border: none;
     border-radius: 20px;
-    margin-top: 40px;
     cursor: pointer;
             box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .7);
        -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .7);
     -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .7);
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
 }
 
-.home-download-resume a {
+.home-info-download-box-side-front {
+    transform: rotateX(0deg);
+}
+
+.home-info-download-box-side-back {
+    transform: rotateY(180deg);
+}
+
+.home-info-download-box-side a {
     color: var(--text-color-inverse);
+    width: auto;
 }
   
-.home-download-resume:hover {
+.home-info-download-box-side:hover {
     background-color: var(--text-color);
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .9);
     transition: all .3s;
+}
+
+@media (max-width: 399px) {
+    .home-info-name-box{
+        padding-bottom: 70px;
+    }
+    .home-info-subtitle-box-side {
+        margin-top: 0px;
+    }
+    .home-info-subtitle-box-side-back {
+        margin-top: 30px;
+    }
+    .home-info-download{
+        height: 30px;
+        margin: 0 auto 0 auto;
+    }
+    .home-info-download-box{
+        margin: 70px auto 10px auto;
+    }
+    .home-info-download-box-side-front{
+        margin-top: -10px;
+    }
+    .home-info-download-box-side-back{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 388px) {
+    .home-info-name-box{
+        padding-bottom: 110px;
+    }
+    .home-info-subtitle-box-side {
+        margin-top: 0px;
+    }
+    .home-info-download{
+        height: 30px;
+        margin: 0 auto 0 auto;
+    }
+    .home-info-download-box{
+        margin: 60px auto 10px auto;
+    }
+    .home-info-download-box-side-front{
+        margin-top: 0px;
+    }
+    .home-info-download-box-side-back{
+        margin-top: 0px;
+    }
 }
 
 @media (min-width: 950px) {
@@ -63,16 +242,24 @@
         margin: 0 auto;
         align-items: center;
     }
-    
+    .home-img {
+        width: 328px;
+        margin: 0 0 -10px 0;
+    }
     .home-info {
-        margin: 10px 0 0 0;
+        width: 350px;
+        margin: 20px 0 0 0;
+    }
+    .home-info-download-box{
+        width: 100%;
+    }
+    .home-info-download-box-side {
+        height: auto;
+        width: auto;
+        padding: .7em 1.2em;
+    }
+    .home-info-download-box-side-back {
+        margin-left: 202px;
     }
     
-    .home-subtitle {
-        margin-top: 8px;
-    }
-    
-    .home-download-resume {
-        margin-top: 32px;
-    }
 }

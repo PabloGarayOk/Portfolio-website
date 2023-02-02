@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--menu-mobile-background-color);
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-content: center ;
@@ -8,13 +8,14 @@
 
 .footer-credits {
     width: auto;
-    padding: 4px 10px 4px 10px;
+    margin: 4px auto 4px auto;
     color: var(--text-color);
     font-size: .8em;
     pointer-events: none;
 }
 
 .footer-autor {
+    text-align: center;
     margin: 5px 0 5px 0;
 }
 
@@ -42,19 +43,61 @@
 .footer-malvinas img {
     width: 40px;
 }
+/* Animacion Credits */
+
+.footer-credits-box {
+    height: 69px;   
+    width: 311px;
+    margin: 5px auto 5px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.footer-credits-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.footer-credits-box-side-back {
+    transform: rotateY(180deg);
+}
+
+.footer-credits-box-side-front {
+    background-color: var(--menu-mobile-background-color);
+    transform: rotateX(0deg); 
+}
+
+/* Fin Animacion Credits */
 
 @media (min-width: 710px) {
+
     .footer-credits {
-        padding: 4px 10px 4px 10px;
+        width: 473px;
         font-size: .82em;
     }
+
+    .footer-credits-box{
+        height: 49px;
+        width: auto;
+    }
+
+    .footer-credits-box-side-front{
+        width: 473px;
+    }
+
 }
 
 @media (min-width: 950px) {
 
     .footer-credits {
-        padding: 4px 10px 4px 10px;
+        width: 491px;
         font-size: .85em;
+    }
+
+    .footer-credits-box-side-front {
+        width: 491px;
     }
 
 }

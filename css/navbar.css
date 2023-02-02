@@ -17,7 +17,6 @@
 }
 
 /* Logo */
-
 .brand {
  margin-top: -7px;
 }
@@ -71,6 +70,160 @@
   display: none;
 }
 
+/* Animacion Menu */
+.menu-home-box {
+  height: 20px;
+  width: 114px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+.menu-home-box-size {
+  width: 107px;
+}
+
+.menu-about-box {
+  height: 20px;
+  width: 148.5px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+.menu-about-box-size {
+  width: 139.5px;
+}
+
+.menu-skills-box {
+  height: 20px;
+  width: 104px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.menu-skills-box-size {
+  width: 164px
+}
+
+.menu-portfolio-box {
+  height: 20px;
+  width: 135px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.menu-portfolio-box-size {
+  width: 145px;
+}
+
+.menu-contact-box {
+  height: 20px;
+  width: 130px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.menu-contact-box-size {
+  width: 140.7px;
+}
+
+.menu-box-side {
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.menu-box-side-front {
+  transform: rotateX(0deg);
+}
+
+.menu-box-side-back {
+  transform: rotateY(180deg);
+}
+
+/* End Animacion Menu */
+
+/* Boton Idioma */
+.back{
+  transform: rotateY(180deg);
+}
+
+.front {
+  transition-delay: 7s;    
+  transform: rotatex(90deg);
+}
+
+/* Animacion Boton Language */
+
+.menu-language,
+.menu-mobile-language {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  -webkit-perspective:650;
+}
+
+.menu-mobile-language {
+  display: none;
+}
+
+.menu-language-box,
+.menu-mobile-language-box {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.menu-language-box-side,
+.menu-mobile-language-box-side {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -moz-backface-visibility: hidden;
+       backface-visibility: hidden;
+  position: absolute;
+}
+
+.menu-language-box-side-front,
+.menu-mobile-language-box-side-front {
+  transform: rotateX(0deg);
+}
+
+.menu-language-box-side-back,
+.menu-mobile-language-box-side-back {
+  transform: rotateY(180deg);
+}
+
+/* Fin Animacion Boton Language */
+
+.menu-language-box-side:hover,
+.menu-mobile-language-box-side:hover {
+  border-radius: 50%;    
+  cursor: pointer;
+}
+
+.menu-language-box-side-front img,
+.menu-language-box-side-back img,
+.menu-mobile-language-box-side-front img,
+.menu-mobile-language-box-side-back img {
+  width: 30px;
+}
+
+.menu-language-box-side-front:hover,
+.menu-mobile-language-box-side-front:hover {
+  box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
+}
+
+.menu-language-box-side-back:hover,
+.menu-mobile-language-box-side-back:hover {
+  box-shadow: 0 0 6px 2px var(--navbar-shallow-color);
+}
+
 @media (max-width: 950px) {
   /* Menu */
   .menu {
@@ -111,7 +264,6 @@
   .close-menu {
     align-self: flex-end;
     padding: 33px 38px 0px 0px;
-    /*padding: 41px 27px 0px 0px;*/
   }
 
   .menu_opened {
@@ -133,4 +285,72 @@
     color: var(--primary-color);
     text-shadow: 1px 1px 1px rgb(55, 55, 55);
   }
+
+  .menu-language {
+    display: none;
+  }
+
+  .menu-mobile-language {
+    display:inherit;
+  }
+
+  .menu-home-box {
+    height: 16.66%;
+    width: 60.3px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.1s;
+  }
+  .menu-home-box-size {
+    width: 60.3px;
+  }
+  
+  .menu-about-box {
+    height: 16.66%;
+    width: 102.1px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.2s;
+  }
+  .menu-about-box-size {
+    width: 94.2px;
+  }
+  
+  .menu-skills-box {
+    height: 16.66%;
+    width: 62.8px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.3s;
+  }
+  
+  .menu-skills-box-size {
+    width: 131px;
+
+  }
+  
+  .menu-portfolio-box {
+    height: 16.66%;
+    width: 111px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.4s;
+  }
+  
+  .menu-portfolio-box-size {
+    width: 123.6px;
+  }
+  
+  .menu-contact-box {
+    height: 16.66%;
+    width: 90px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+  }
+  
+  .menu-contact-box-size {
+    width: 105.1px;
+  }
+
 }

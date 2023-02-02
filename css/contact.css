@@ -2,11 +2,37 @@
     text-align: center;
 }
 
+/* Animacion Contact */
+
 .contact-content-title {
-    width: 164px;
-    margin: 0 auto;
+    width: 161px;
+    margin: 0 auto 30px auto;
     align-items: center;
 }
+
+.contact-content-title-box{
+    height: 53px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.contact-content-title-box-side {
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.contact-content-title-box-side-back {
+    margin-left: -13px;
+    transform: rotateY(180deg);
+}
+
+.contact-content-title-box-side-front {
+    transform: rotateX(0deg);
+}
+
+/* Fin Animacion Contact */
 
 .contact-divider {
     height: 8px;
@@ -30,20 +56,80 @@
 
 form {
     display: block;
-    width: 83%;
+    width: 100%;
     max-width: 420px;
-    margin: 40px auto 0 auto;
+    height: auto;
+    margin: 0px auto 0px auto;
     padding: 30px 0 20px 0;
     background-color: var(--theme-color-inverse);
     border-radius: 20px;
 }
 
-.contact-group {
+.display{
+    display: none;
+}
+
+.space,
+.space-back {
+    margin-top: 30px;
+}
+
+.space-a,
+.space-back-a{
+    margin-top: 80px;
+}
+
+.space-b {
+    margin-top: 140px;
+}
+
+.space-back-b{
+    margin-top: 140px;
+}
+
+.space-c {
+    margin-top: 80px;
+}
+
+.space-back-c{
+    margin-top: 170px;
+}
+
+/* Animacion Formulario de Contacto */
+
+.contact-content-form-box{
+    height: 412px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.contact-content-form-box-side{
+    width: 100%;
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.contact-content-form-box-side-back{
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Formulario de Contacto */
+
+.contact-group-front {
     width: 100%;
     margin: 0 auto;
 }
 
-.contact-row {    
+.contact-group-back {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-row {
     color: var(--theme-color);
     position: relative;
     margin: 45px;
@@ -140,7 +226,6 @@ textarea:focus~.contact-line::before {
 
 .contact-links {
     width: 230px;
-    margin: 40px auto 0px auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -155,6 +240,82 @@ textarea:focus~.contact-line::before {
     color: var(--primary-color);
     transform: scale(1.07);
 }
+/* Animacion Links */
+
+.contact-content-links-box{
+    height: 29px;
+    width: 230px;
+    margin: 0px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.contact-content-links-box-side{
+    position: absolute;
+    -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+}
+
+.contact-content-links-box-side-front{
+    transform: rotateX(0deg); 
+}
+
+.contact-content-links-box-side-back{
+    transform: rotateY(180deg);
+}
+
+/* Fin Animacion Links */
+
+@media (min-width: 359px) {
+
+    .space-b{
+        margin-top: 80px;
+    }
+
+    .space-back-b{
+        margin-top: 110px;
+    }
+
+    .space-back-c{
+        margin-top: 115px;
+    }
+
+}
+
+@media (min-width: 380px) {
+
+    .contact-content-form-box{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 413px) {
+
+    .space-back-b{
+        margin-top: 85px;
+    }
+
+}
+
+@media (min-width: 499px) {
+
+    .space-a,
+    .space-b,
+    .space-c {
+        margin-top: 60px;
+    }
+
+    .space-back-a{
+        margin-top: 60px;
+    }
+
+    .space-back-c{
+        margin-top: 85px;
+    }
+
+}
 
 @media (min-width: 710px) {
     form {
@@ -163,6 +324,14 @@ textarea:focus~.contact-line::before {
         max-width: 520px;
     }
 
+    .contact-content-form-box{
+        width: 100%;
+    }
+    
+    .contact-content-links-box{
+        width: 280px;
+    }
+    
     .contact-links {
         width: 280px;
     }
@@ -170,12 +339,25 @@ textarea:focus~.contact-line::before {
     .contact-links i {
         font-size: 30px; 
     }
+
+    .space-a,
+    .space-b,
+    .space-c {
+        margin-top: 50px;
+    }
+    
 }
 
 @media (min-width: 950px) {
     form {
         width: 51%;
         max-width: 550px;
+        height: fit-content;
+    }
+
+    .contact-content-links-box{
+        width: 350px;
+        height: 32px;
     }
 
     .contact-links {
@@ -184,5 +366,20 @@ textarea:focus~.contact-line::before {
 
     .contact-links i {
         font-size: 35px; 
+    }
+
+    .space-back-b{
+        margin-top: 65px;
+    }
+
+    .space-back-c{
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .space-back-c{
+        margin-top: 70px;
     }
 }
