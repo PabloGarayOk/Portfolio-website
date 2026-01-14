@@ -4,20 +4,35 @@ This project is a **reusable developer portfolio website** built as a one-page a
 
 It is the same portfolio structure I personally use, but with **generic placeholder data** (e.g. “John Doe”), sample images, and demo content, intended as a starting point or reference implementation.
 
-## Overview
+## Project Overview
 
-The website is a **single-page layout** with smooth section navigation and a strong focus on user experience, performance, and maintainability.
+**Role:** Frontend / Full Stack Developer
 
-Sections included:
-- Home
-- About
-- Skills
-- Portfolio
-- Contact
+This project is a **multi-language personal portfolio website** designed as a reusable base for developers.
 
-Navigation between sections uses smooth scrolling and visual indicators to clearly show the current section.
+It was built as a one-page application with smooth navigation, strong visual focus, and careful UX decisions.  
+The site supports **Spanish and English**, includes animated language switching, persistent form state, and dynamic content updates.
+
+The project focuses on:
+- User experience and visual feedback
+- Clean, maintainable CSS architecture
+- Frontend state handling without frameworks
+- Practical JavaScript for real-world interactions
+
+This repository represents a thoughtfully designed portfolio template focused on real-world usability and continuous improvement, rather than a simple demo.
 
 ## Key Features
+The following features highlight the main functional and UX aspects of the project:
+
+### Single-Page Structure
+- Single-page layout with clearly defined sections:
+	- Home
+	- About
+	- Skills
+	- Portfolio
+	- Contact
+- Smooth scrolling between sections
+- Clear visual feedback indicating the active section
 
 ### Multilanguage Support (ES / EN)
 - Language switcher with animated 180° flip effect
@@ -36,9 +51,9 @@ Navigation between sections uses smooth scrolling and visual indicators to clear
 ### Contact Form
 - Minimalist design
 - Multi-layer validation:
-  - HTML5
-  - JavaScript
-  - PHP
+	- HTML5
+	- JavaScript
+	- PHP
 - Form data persistence on language switch
 - Automatic scroll to form feedback after submission
 - Centralized message handling
@@ -84,8 +99,8 @@ The navigation menu uses `::after` pseudo-elements to display a dynamic underlin
 - Card-based layout
 - Project image preview
 - Links to:
-  - Live demo
-  - GitHub repository
+	- Live demo
+	- GitHub repository
 
 ## CV Download
 - Language-aware CV download
@@ -98,6 +113,18 @@ The navigation menu uses `::after` pseudo-elements to display a dynamic underlin
 - Author information
 - Personal tribute section (dynamic year counter)
 
+## Planned Improvements
+The following features are planned and not yet implemented:
+
+- Custom CAPTCHA system for contact form:
+	- Simple math challenge (e.g. `2 + [image]`)
+	- Image displays a random number (1–10)
+	- Images identified by filename
+	- Random image selection per request
+	- Server-side validation before email delivery
+
+This approach avoids third-party services while adding an extra layer of spam protection.
+
 ## Technologies Used
 - PHP
 - JavaScript
@@ -106,6 +133,16 @@ The navigation menu uses `::after` pseudo-elements to display a dynamic underlin
 - Flexbox & Grid
 - Responsive design
 - UX-focused animations
+
+## Lessons Learned
+
+- UX details (animations, transitions, visual feedback) significantly improve perceived quality.
+- Supporting multiple languages affects layout, spacing, and navigation behavior.
+- Preserving form state during UI changes improves usability and user trust.
+- CSS architecture and variables greatly simplify long-term maintenance.
+- Small interactive details can communicate professionalism without heavy frameworks.
+- Cross-browser compatibility requires explicit handling of CSS visibility and animations.
+- Designing for recruiters means optimizing for clarity, speed, and minimal friction.
 
 ## Live Demo
 Developer Portfolio  
